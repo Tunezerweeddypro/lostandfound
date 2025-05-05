@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Lost & Found</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-purple-100 text-gray-900 min-h-screen">
+  <!-- Top Navigation -->
+  <nav class="flex justify-between items-center p-6 bg-white shadow-md sticky top-0 z-10 mb-8">
+    <h1 class="text-2xl font-extrabold text-blue-600">Admin Dashboard</h1>
+    <div class="flex space-x-4 text-sm font-medium">
+      <a href="index.html" class="hover:underline text-blue-600">User View</a>
+      <a href="#" class="hover:underline">Settings</a>
+      <a href="login.html" class="hover:underline">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Dashboard Section -->
+  <main class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="card text-center">
+        <h2 class="text-xl font-semibold mb-2">Total Lost Reports</h2>
+        <p class="text-3xl text-blue-600 font-bold">128</p>
+      </div>
+      <div class="card text-center">
+        <h2 class="text-xl font-semibold mb-2">Pending Requests</h2>
+        <p class="text-3xl text-yellow-500 font-bold">12</p>
+      </div>
+      <div class="card text-center">
+        <h2 class="text-xl font-semibold mb-2">Resolved Cases</h2>
+        <p class="text-3xl text-green-500 font-bold">94</p>
+      </div>
+    </div>
+
+    <div class="card mb-8">
+      <h2 class="text-2xl font-bold mb-4">Recent Reports</h2>
+      <table class="w-full table-auto">
+        <thead>
+          <tr class="bg-gray-100 text-left">
+            <th class="px-4 py-2">Name</th>
+            <th class="px-4 py-2">Item</th>
+            <th class="px-4 py-2">Date Reported</th>
+            <th class="px-4 py-2">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="px-4 py-2">Alice M.</td>
+            <td class="px-4 py-2">Student ID</td>
+            <td class="px-4 py-2">2025-04-29</td>
+            <td class="px-4 py-2 text-yellow-600">Pending</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2">James K.</td>
+            <td class="px-4 py-2">National ID</td>
+            <td class="px-4 py-2">2025-04-27</td>
+            <td class="px-4 py-2 text-green-600">Resolved</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2 class="text-2xl font-bold mb-4">Admin Tools</h2>
+      <div class="flex flex-col md:flex-row gap-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Manage Users</button>
+        <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Review Submissions</button>
+        <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Clear Resolved</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
