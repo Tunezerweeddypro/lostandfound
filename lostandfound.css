@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+  background: linear-gradient(to right, #eff6ff, #ede9fe);
+  color: #1f2937;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1f2937;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+nav a.text-red-600 {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+nav .social-links a {
+  color: #3b82f6;
+  margin-left: 1rem;
+}
+
+/* Language Selector */
+#languageSelect {
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Section Styling */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Card Style for Forms */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+input:focus,
+button:focus {
+  outline: 2px solid #2563eb;
+}
+
+/* Login Button */
+button {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #15803d;
+}
+
+/* Sign-up Link */
+.card .text-center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
